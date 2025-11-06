@@ -46,7 +46,7 @@ header nav a:hover {
 /* Homepage */
 .hero {
     height: 80vh;
-    background: #333 url('https://placehold.co/1600x900/005a4a/f4f7f6?text=Hero+Video+(Placeholder)') no-repeat center center/cover;
+    background: #333 url('https://placehold.co/1600x900/005a4a/f4f7f6?text=Hero+Video+()') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
