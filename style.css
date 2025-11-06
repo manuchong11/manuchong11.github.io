@@ -1,0 +1,256 @@
+/* General & Body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005a4a;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #008a74;
+}
+
+/* Homepage */
+.hero {
+    height: 80vh;
+    background: #333 url('https://placehold.co/1600x900/005a4a/f4f7f6?text=Hero+Video+(Placeholder)') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 60%;
+    max-width: 600px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.visual-nav, .top-rated {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.visual-nav h2, .top-rated h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.nav-grid, .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.nav-card, .activity-card, .vendor-card, .review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-card:hover, .activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.nav-card img, .activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-card h3, .activity-card-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.activity-card-content {
+    padding: 20px;
+}
+
+.rating {
+    color: #f5a623;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0f2f1;
+    color: #005a4a;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Explore Page */
+.explore-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #005a4a;
+    color: white;
+    border-color: #005a4a;
+}
+
+/* Activity Detail Page */
+.activity-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.activity-main h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.activity-gallery {
+    width: 100%;
+    height: 350px;
+    background: #eee url('https://placehold.co/800x400/008a74/fff?text=Zip-lining+Gallery') no-repeat center center/cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.details-list h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.details-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.details-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.details-list li strong {
+    color: #005a4a;
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.activity-sidebar h3 {
+    font-size: 1.5rem;
+}
+
+.vendor-card, .review-card {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.vendor-card h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #008a74;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #005a4a;
+}
+
+.review-card p {
+    font-style: italic;
+}
+
+.review-card .rating {
+    margin-bottom: 5px;
+}
+
+.review-card .reviewer {
+    font-weight: bold;
+    margin-top: 10px;
+}
