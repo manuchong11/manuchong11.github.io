@@ -1,1 +1,1 @@
-# manuchong11.github.io
+Website school project
